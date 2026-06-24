@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,10 +38,37 @@
       color: #666;
       font-size: 14px;
     }
+
+    .lang-nav {
+      max-width: 800px;
+      margin: 0 auto 12px;
+      padding: 0 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .lang-nav a {
+      color: #1D9E75;
+      text-decoration: none;
+    }
+
+    .lang-nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
+  <nav class="lang-nav" aria-label="Language">
+    <a href="/privacy-policy/" aria-current="page">English</a>
+    <a href="/privacy-policy/fr/">Français</a>
+    <a href="/privacy-policy/es/">Español</a>
+    <a href="/privacy-policy/ar/">العربية</a>
+  </nav>
+
   <div class="container">
 
     <h1>Privacy Policy</h1>
